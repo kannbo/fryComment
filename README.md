@@ -36,3 +36,17 @@ Comment.jsは簡単,使いやすいをモットーとしてできました。<br
   <li><code>list</code>-コメントをHTMLで取得します。引数はx。xは一つの要素のHTMLを入力します。$textで内容,$nameで名前、$timeで時間です。</li>
   <li><code>enter</code>-コメントをID"comment"に出力します。引数はx,HTMLを入力します。listと同じです</li>
 </ul>
+
+## 使用
+<code><script src="https://kannbo.github.io/fryComment/comment.js"></script></code><br>
+このコードを張ると使用できます。<br><code><script>
+console.log(document.getElementById("comment").innerHTML)
+comment.comments("dsds")
+comment.setid("dsds")
+comment.enter("$name:$text<br>")
+</script></code>
+<!--<style>
+  code{
+    display:block;
+  }
+</style>-->

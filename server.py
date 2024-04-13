@@ -58,11 +58,13 @@ def lists():
 @route("/comment/<name>/<ids>/json")
 def aaaaaa(name,ids):
     global website
+    HTTPResponse(status=200, body=body, headers={"Access-Control-Allow-Origin":"*"})
     return str(website[name]["page"][ids])
 @route("/comment/<name>/<ids>/html/<html:path>")
 def aaaaaa(name,ids,html):
     global website
     aaaaaaa=""
+    HTTPResponse(status=200, body=body, headers={"Access-Control-Allow-Origin":"*"})
     for i in website[name]["page"][ids]:
         aaaaaaa=aaaaaaa+html.replace("$time",i["time"]).replace("$name",i["name"]).replace("$text",i["text"])
     return aaaaaaa

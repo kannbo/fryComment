@@ -24,7 +24,7 @@ def hello2():
     except:
         if not "/" in request.forms.name and not request.forms.name=="" and not " " in request.forms.name:
             website[request.forms.name]={"page":{},"password":request.forms.password}
-            return f"""<title>成功 | {request.forms.name]}</title><link rel="stylesheet" href="https://kannbo.github.io/fryComment/css.css2">成功しかした /comment/{request.forms.name}/id_make"""
+            return f"""<title>成功 | {request.forms.name}</title><link rel="stylesheet" href="https://kannbo.github.io/fryComment/css.css2">成功しかした /comment/{request.forms.name}/id_make"""
         else:
             print(request.forms.name)
             return f"<link rel="stylesheet" href="https://kannbo.github.io/fryComment/css.css2">失敗"

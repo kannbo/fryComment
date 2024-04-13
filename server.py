@@ -1,6 +1,9 @@
 from bottle import *
 import datetime
 website={"sample":{"page":[{"name":"hello","text":"hello"}],"password":None}}
+@hook('after_request')
+def enable_cors():
+    response.headers['Access-Control-Allow-Origin'] = '*'
 @get('/')
 def hello():
     return """

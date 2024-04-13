@@ -9,6 +9,10 @@ def hello():
 <input name="name" type="text"　maxlength="20"><br>作成パスワード<input name="password" type="text"><br>
 <input type="submit" value="作成する">
 </form>
+<div id="manu">
+</div>
+<link rel="stylesheet" href="https://kannbo.github.io/fryComment/css.css">
+<script src="https://kannbo.github.io/fryComment/main.page.js"></script>
 """
 @post('/create')
 def hello2():
@@ -16,22 +20,28 @@ def hello2():
     try:
         website[request.forms.name]
         print(request.forms.name)
-        return "失敗"
+        return "<link rel="stylesheet" href="https://kannbo.github.io/fryComment/css.css2">失敗"
     except:
         if not "/" in request.forms.name and not request.forms.name=="" and not " " in request.forms.name:
             website[request.forms.name]={"page":{},"password":request.forms.password}
-            return f"""成功しかした /comment/{request.forms.name}/id_make"""
+            return f"""<title>成功 | {request.forms.name]}</title><link rel="stylesheet" href="https://kannbo.github.io/fryComment/css.css2">成功しかした /comment/{request.forms.name}/id_make"""
         else:
             print(request.forms.name)
-            return f"失敗"
+            return f"<link rel="stylesheet" href="https://kannbo.github.io/fryComment/css.css2">失敗"
 @get("/comment/<name>/id_make")
 def id_create(name):
     return f"""
+<title>作成画面</title>
 <form action="/comment/{name}/id_make" method="POST">ID
 <input name="name" type="text"　maxlength="20"><br>
 作成パスワード<input name="password" type="text"><br>
 <input type="submit" value="作成する">
-</form>"""
+</form>
+<div id="manu2">
+</div>
+<link rel="stylesheet" href="https://kannbo.github.io/fryComment/css.css">
+<script src="https://kannbo.github.io/fryComment/main.page.js"></script>
+"""
 @post("/comment/<name>/id_make")
 def id_create_c(name):
     global website

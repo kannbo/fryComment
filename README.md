@@ -21,3 +21,18 @@ HTMLのコードには<br>
 から取得します。
 ##おわり
 これであなたも簡単にchatを作れます!!
+
+# Comment.js
+## comment.jsとは
+このコードではどうしてもJSがある程度できる方のみ使えるコードになってしまいます。できる方はそれでいいですが、初心者向けに用意しました。<br>
+Comment.jsは簡単,使いやすいをモットーとしてできました。<br>
+どうしても簡単なので複雑なことはできませんが、そこはご理解ご協力いただけると幸いです
+## 関数一覧
+こちらです
+<ul>
+  <li><code>comments</code>-コメントのURLを指定します。引数はx,URLを入力します</li>
+  <li><code>setid</code>-コメントのidを指定します引数はx,URLを入力します</li>
+  <li><code>get</code>-コメントをjsonで取得します</li>
+  <li><code>list</code>-コメントをHTMLで取得します。引数はx。xは一つの要素のHTMLを入力します。$textで内容,$nameで名前、$timeで時間です。</li>
+  <li><code>enter</code>-コメントをID"comment"に出力します。引数はx,HTMLを入力します。listと同じです</li>
+</ul>

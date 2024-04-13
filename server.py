@@ -4,6 +4,7 @@ website={"sample":{"page":[{"name":"hello","text":"hello"}],"password":None}}
 @get('/')
 def hello():
     return """
+<title>コメント欄作成</title>
 <form action="/create" method="POST">url
 <input name="name" type="text"　maxlength="20"><br>作成パスワード<input name="password" type="text"><br>
 <input type="submit" value="作成する">

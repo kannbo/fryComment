@@ -7,7 +7,7 @@ https://frycomment.onrender.com/comment/(入力したURL)/id_make を開き作�
 作成完了なら第一は成功!<br>
 ## flyCommentの作成
 コメント欄を作成するには、formのPostアクションを使用します。<br>
-https://frycomment.onrender.com/comment/(入力したURL)/(id)/add あてにtext nameの要素のあるformを作成する。<br>
+https://frycomment.onrender.com/comment/(入力したURL)/(id)/add/(リダイレクト先) あてにtext nameの要素のあるformを作成する。リダイレクト先は必ず入れること。<br>
 それで投稿フォームは完量しました!!<br>
 ## flyCommentの確認
 https://frycomment.onrender.com/comment/(入力したURL)/(id)/html/(HTMLのコード)<br>

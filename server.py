@@ -66,7 +66,7 @@ def aaaaaa(name,ids):
     HTTPResponse(status=200, body=body, headers={"Access-Control-Allow-Origin":"*"})
     return str(website[name]["page"][ids])
 @route("/comment/<name>/<ids>/html/<html:path>")
-def aaaaaa(name,ids,html,path):
+def aaaaaa(name,ids,html):
     global website
     aaaaaaa=""
     body = {"message": "OK"}
@@ -75,7 +75,7 @@ def aaaaaa(name,ids,html,path):
         aaaaaaa=aaaaaaa+html.replace("$time",i["time"]).replace("$name",i["name"]).replace("$text",i["text"])
     return aaaaaaa
 @post("/comment/<name>/<ids>/add/<path:path>")
-def addpage(name,ids):
+def addpage(name,ids,path):
     global website
     website[name]["page"][ids].append({"time":str(datetime.datetime.now()),"name":request.forms.name,"text":request.forms.text})
     return f"""<meta http-equiv="refresh"content="0;URL={path}">"""

@@ -7,7 +7,7 @@ def enable_cors():
 @get('/')
 def hello():
     return """
-<title>コメント欄作成</title>
+<title>コメント欄作成</title><h1>flyComment</h1>
 <form action="/create" method="POST">url
 <input name="name" type="text"　maxlength="20"><br>作成パスワード<input name="password" type="text"><br>
 <input type="submit" value="作成する">
@@ -16,6 +16,7 @@ def hello():
 </div>
 <link rel="stylesheet" href="https://kannbo.github.io/fryComment/css.css">
 <script src="https://kannbo.github.io/fryComment/main.page.js"></script>
+<a href="https://flychats.onrender.com">FlyChat(チャットサービス)</a><a href="https://flyapp.onrender.com">FlyApp(web作成)</a>
 """
 @post('/create')
 def hello2():

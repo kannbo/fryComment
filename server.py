@@ -78,7 +78,7 @@ def aaaaaa(name,ids,html):
 def addpage(name,ids):
     global website
     website[name]["page"][ids].append({"time":str(datetime.datetime.now()),"name":request.forms.name,"text":request.forms.text})
-    return """<script>window.open(document.referrer,"_top");</script>"""
+    return """<script>location.href =document.referrer</script>"""
 @route("/css")
 def css():
     return """

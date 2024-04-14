@@ -74,11 +74,11 @@ def aaaaaa(name,ids,html):
     for i in website[name]["page"][ids]:
         aaaaaaa=aaaaaaa+html.replace("$time",i["time"]).replace("$name",i["name"]).replace("$text",i["text"])
     return aaaaaaa
-@post("/comment/<name>/<ids>/add")
+@post("/comment/<name>/<ids>/add/<path:path>")
 def addpage(name,ids):
     global website
     website[name]["page"][ids].append({"time":str(datetime.datetime.now()),"name":request.forms.name,"text":request.forms.text})
-    return """<script>location.href =document.referrer</script>"""
+    return f"""<meta http-equiv="refresh"content="0;URL={path}">"""
 @route("/css")
 def css():
     return """

@@ -66,7 +66,7 @@ def aaaaaa(name,ids):
     HTTPResponse(status=200, body=body, headers={"Access-Control-Allow-Origin":"*"})
     return str(website[name]["page"][ids])
 @route("/comment/<name>/<ids>/html/<html:path>")
-def aaaaaa(name,ids,html):
+def aaaaaa(name,ids,html,path):
     global website
     aaaaaaa=""
     body = {"message": "OK"}

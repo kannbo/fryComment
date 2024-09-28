@@ -15,8 +15,8 @@ get:function(){
   } else {
     return `Error: ${xhr.status}`
   }}
-  console.log(`https://frycomment.onrender.com/comment/${this.comment_name}/${this.comment_id}/json`)
-  xhr.open("GET", `https://frycomment.onrender.com/comment/${this.comment_name}/${this.comment_id}/json`,true);
+  console.log(`https://commentserver.pythonanywhere.com/comment/${this.comment_name}/${this.comment_id}/json`)
+  xhr.open("GET", `https://commentserver.pythonanywhere.com/comment/${this.comment_name}/${this.comment_id}/json`,true);
   xhr.send(null);
 },
 comment_id:"",comment_name:"",
@@ -30,8 +30,8 @@ list:function(x){
   } else {
     return `Error: ${xhr.status}`
   }}
-  console.log(`https://frycomment.onrender.com/comment/${this.comment_name}/${this.comment_id}/html/${x}`)
-  xhr.open("GET", `https://frycomment.onrender.com/comment/${this.comment_name}/${this.comment_id}/html/${x}`,true);
+  console.log(`https://commentserver.pythonanywhere.com/comment/${this.comment_name}/${this.comment_id}/html/${x}`)
+  xhr.open("GET", `https://commentserver.pythonanywhere.com/comment/${this.comment_name}/${this.comment_id}/html/${x}`,true);
   xhr.send(null);
 },
 enter:function(x,y){
@@ -44,8 +44,8 @@ enter:function(x,y){
   } else {
     return `Error: ${xhr.status}`
   }}
-  console.log(`https://frycomment.onrender.com/comment/${this.comment_name}/${this.comment_id}/html/${x}`)
-  xhr.open("GET", `https://frycomment.onrender.com/comment/${this.comment_name}/${this.comment_id}/html/${x}`,true);
+  console.log(`https://commentserver.pythonanywhere.com/comment/${this.comment_name}/${this.comment_id}/html/${x}`)
+  xhr.open("GET", `https://commentserver.pythonanywhere.com/comment/${this.comment_name}/${this.comment_id}/html/${x}`,true);
   xhr.send(null);
 },
 version:"v.0.01"

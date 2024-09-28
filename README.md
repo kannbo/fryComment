@@ -1,6 +1,7 @@
 # FlyCommentの使い方
 ## flyCommentのURL
-https://frycomment.onrender.com がFlyCommentのURLです。
+https://frycomment.onrender.com がFlyCommentのURLです。<br>
+現在render無料枠なので落ちやすいです、pythonanywhereに移行中
 ## flyCommentの準備
 作成パスワードでIDを作成するのでメモ、URLは自由な文字列を入力して作成するを押す<br>
 https://frycomment.onrender.com/comment/(入力したURL)/id_make を開き作成パスワードに作成パスワードを入力<br>
